@@ -28,7 +28,7 @@ public class Bank {
             } catch (InterruptedException e) {
                 System.out.println("interrupted");
             }
-            System.out.println(this.getName()  + "exiting");
+            System.out.println(this.getName()  + " exiting");
         }
     }
 
@@ -83,9 +83,18 @@ class Transaction {
     }
 
     public String toString() {
-        return "Transaction: from = " + fromAccount + ", to = " + toAccount + " amount = " + amount;
+        return " Transaction: from = " + fromAccount + ", to = " + toAccount + " amount = " + amount;
     }
 
 }
 
 //TODO: Create an Account class with id, num of transactions and account balance
+class Account {
+    int idNo;
+    float balance;
+    int numTransactions;
+
+    public Account(int idNo, float balance, int numTransactions) {
+
+    }
+}
